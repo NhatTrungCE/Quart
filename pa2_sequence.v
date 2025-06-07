@@ -16,16 +16,7 @@ module pa2_sequence(
 	reg signed [7:0] reg_X, reg_X1, reg_X2; //reg luu ket qua x, x1, x2
 	reg [3:0] state;
 	reg [31:0] display_state;
-	wire [7:0] core_o_X, core_o_X1, core_o_X2; //bien trung gian nhan ket qua x, x1, x2 tư pa1
-	
-	//o_result
-	//00: vo nghiem 	-> X = 0
-	//01: 1 nghiem	-> X = -c/b (ptb1)
-	//10: 1 nghiem kép-> X = -b/2a
-	//11: 2 nghiem phan biet X1, X2 */
-	
-	//Trang thai FSM
-	localparam 	IDLE = 4'b0000;
+	wire [7:0] core_o_X, core_o_
 	localparam	GET_A = 4'b0001;
 	localparam	GET_B = 4'b0010;
 	localparam	GET_C = 4'b0011;

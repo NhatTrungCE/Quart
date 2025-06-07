@@ -16,11 +16,11 @@ module tb_pa1_combination();
 	 // Đây là các dây tín hiệu để bắt lấy kết quả 7 đoạn
     wire [6:0] HEX0, HEX1, HEX2, HEX3;
 	 
-// ===== BỔ SUNG 1: Khai báo reg để lưu ký tự đã giải mã =====
+// ===== BỔ SUNG 1: Khai báo reg để lưu ký==
     reg [7:0] decoded_HEX0, decoded_HEX1, decoded_HEX2, decoded_HEX3;
 
     
-        // Khởi tạo module cần test (Device Under Test - DUT)
+        
     pa1_combination dut (
         .i_enable(i_enable),
         .i_A(i_A),

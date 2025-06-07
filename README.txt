@@ -6,3 +6,4 @@ Version 2
  + Add Exception for A = 0 
  
 - Update Test bench
+--------------------------dfdsfdssđsfdsf

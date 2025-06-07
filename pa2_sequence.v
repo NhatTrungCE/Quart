@@ -9,7 +9,7 @@ module pa2_sequence(
 	output [1:0] o_result,
 	output reg signed [7:0] o_data //ket qua x, x1, x2 
 	
-);
+);///ffffffffffffff
 
 	//Tin hieu noi bo
 	reg signed [3:0] reg_A, reg_B, reg_C; //nhan dư lieu tu sw va luu vao day

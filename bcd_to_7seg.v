@@ -4,7 +4,8 @@ module bcd_to_7seg(
 );
 
 always @(*) begin
-    case (bcd)
+    case (bcd) // switch - case to check segment 
+	
         4'd0: seg = 7'b1000000;
         4'd1: seg = 7'b1111001;
         4'd2: seg = 7'b0100100;
@@ -15,10 +16,13 @@ always @(*) begin
         4'd7: seg = 7'b1111000;
         4'd8: seg = 7'b0000000;
         4'd9: seg = 7'b0010000;
-		  4'd10: seg = 7'b0111111; // dấu "-" (chỉ thanh giữa)
-		  4'd15: seg = 7'b1111111; // Blank (tắt toàn bộ)
+		4'd10: seg = 7'b0111111; 
+		 4'd15: seg = 7'b1111111;
+		 
         default: seg = 7'b0111111; 
+		
     endcase
+	
 end
 
 endmodule
